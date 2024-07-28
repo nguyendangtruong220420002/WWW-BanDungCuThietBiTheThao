@@ -1,0 +1,119 @@
+[{
+  "_id": {
+    "$oid": "669e36ba81ae6f709e87adc1"
+  },
+  "userId": "nguyendangtruong22042002@gmail.com",
+  "address": "96//5/ Đường Lê lợi, Phường Bến Nghé, Quận 1,Tp.Hồ Chí Minh ",
+  "paymentMethod": "Thanh toán chuyển khoản trước",
+  "total": 36000000,
+  "phone": "03",
+  "email": "nguyendangtruong22042002@gmail.com",
+  "hoten": "Nguyễn Đang Trường",
+  "ghichu": "Không",
+  "purchaseDate": "2024-07-22T17:38:50.528Z",
+  "sanPhams": [
+    {
+      "tensanpham": "Máy chạy bộ điện cao cấp DL-GT7",
+      "soluong": 1,
+      "gia": 12000000
+    },
+    {
+      "tensanpham": "Máy chạy bộ điện cao cấp DL-GT7",
+      "soluong": 1,
+      "gia": 12000000
+    },
+    {
+      "tensanpham": "Máy chạy bộ điện cao cấp DL-GT7",
+      "soluong": 1,
+      "gia": 12000000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "669f8fb4bdf04a723cc28f80"
+  },
+  "userId": "phamsythai644@gmail.com",
+  "address": "Ca Mau",
+  "paymentMethod": "Nhận hàng trước khi thanh toán",
+  "total": 169500000,
+  "phone": "012345678",
+  "email": "phamsythai644@gmail.com",
+  "hoten": "Phạm Sỹ Thái",
+  "ghichu": "...",
+  "purchaseDate": "2024-07-23T18:10:44.784Z",
+  "sanPhams": [
+    {
+      "tensanpham": "Máy chạy bộ điện Pro Fitness PF-117D",
+      "soluong": 100,
+      "gia": 15000
+    },
+    {
+      "tensanpham": "Máy chạy bộ điện cao cấp DL-GT7",
+      "soluong": 4,
+      "gia": 12000000
+    },
+    {
+      "tensanpham": "Máy chạy bộ điện cao cấp DL-GT7",
+      "soluong": 10,
+      "gia": 12000000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "669f9026bdf04a723cc28f81"
+  },
+  "userId": "phamsythai644@gmail.com",
+  "address": "96//5/ Đường Lê lợi, Phường Bến Nghé, Quận 1,Tp.Hồ Chí Minh ",
+  "paymentMethod": "Nhận hàng trước khi thanh toán",
+  "total": 88555000,
+  "phone": "0123456789",
+  "email": "phamsythai644@gmail.com",
+  "hoten": "Phạm Sỹ Thái",
+  "ghichu": "...",
+  "purchaseDate": "2024-07-23T18:12:38.605Z",
+  "sanPhams": [
+    {
+      "tensanpham": "Giàn tạ đa năng BP-HK168",
+      "soluong": 1,
+      "gia": 35990000
+    },
+    {
+      "tensanpham": "Máy chạy bộ điện Pro Fitness PF-117D",
+      "soluong": 1,
+      "gia": 15000
+    },
+    {
+      "tensanpham": "Máy chạy bộ điện cao cấp DL-T6",
+      "soluong": 1,
+      "gia": 40550000
+    },
+    {
+      "tensanpham": "Máy chạy bộ điện cao cấp DL-GT7",
+      "soluong": 1,
+      "gia": 12000000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a5d978b66de3156af74c2f"
+  },
+  "userId": "nguyendangtruong22042002@gmail.com",
+  "address": "96/ Đường Lê lợi, Phường Bến Nghé, Quận 1,Tp.Hồ Chí Minh ",
+  "paymentMethod": "Nhận hàng trước khi thanh toán",
+  "total": 12000000,
+  "phone": "0326235816",
+  "email": "nguyendangtruong22042002@gmail.com",
+  "hoten": "Nguyễn Đang Trường",
+  "ghichu": "Không giao giờ hành chính",
+  "purchaseDate": "2024-07-28T12:39:04.063Z",
+  "sanPhams": [
+    {
+      "tensanpham": "Máy chạy bộ điện cao cấp DL-GT7",
+      "soluong": 1,
+      "gia": 12000000
+    }
+  ]
+}]

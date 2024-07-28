@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "66910e917fd9ed7da71b8fde"
+  },
+  "MALOAI": "MCB1",
+  "TENLOAI": "MÁY CHẠY BỘ ĐIỆN",
+  "GHICHU": "Thiết Bị"
+},
+{
+  "_id": {
+    "$oid": "66910eb97fd9ed7da71b8fdf"
+  },
+  "MALOAI": "XĐ",
+  "TENLOAI": "XE ĐẠP TẬP THỂ DỤC",
+  "GHICHU": "Thiết Bị"
+},
+{
+  "_id": {
+    "$oid": "66910ecb7fd9ed7da71b8fe0"
+  },
+  "MALOAI": "GT1",
+  "TENLOAI": "GIÀN TẠ ĐA NĂNG",
+  "GHICHU": "Thiết Bị"
+},
+{
+  "_id": {
+    "$oid": "66910ee37fd9ed7da71b8fe1"
+  },
+  "MALOAI": "PKG1",
+  "TENLOAI": "PHỤ KIỆN GYM",
+  "GHICHU": "Công Cụ"
+},
+{
+  "_id": {
+    "$oid": "66910f0f7fd9ed7da71b8fe2"
+  },
+  "MALOAI": "LN1",
+  "TENLOAI": "ĐỒ LƯU NIỆM THỂ THAO",
+  "GHICHU": "Vật Phẩm"
+},
+{
+  "_id": {
+    "$oid": "66910f367fd9ed7da71b8fe3"
+  },
+  "MALOAI": "B1",
+  "TENLOAI": "CÁC LOẠI BÓNG",
+  "GHICHU": "Cô"
+},
+{
+  "_id": {
+    "$oid": "66910f4b7fd9ed7da71b8fe4"
+  },
+  "MALOAI": "G1",
+  "TENLOAI": "Giầy Thể Thao",
+  "GHICHU": "Công"
+}]

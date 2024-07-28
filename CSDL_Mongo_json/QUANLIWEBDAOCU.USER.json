@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "668f9bac1cd18b3a9d80a5e4"
+  },
+  "MA_USER": "ADMIN1",
+  "TEN": "Trường Quản Lý",
+  "PASSWORD": "123456",
+  "GMAIL": "truong@gmail.com",
+  "ROLE": "admin"
+},
+{
+  "_id": {
+    "$oid": "669e16f89383c22e6c9ebf4a"
+  },
+  "MA_USER": "USER5",
+  "TEN": "Phạm Sỹ Thái",
+  "PASSWORD": "123",
+  "GMAIL": "phamsythai644@gmail.com",
+  "ROLE": "user"
+},
+{
+  "_id": {
+    "$oid": "669e17119383c22e6c9ebf4b"
+  },
+  "MA_USER": "USER6",
+  "TEN": "Nguyễn Đang Trường",
+  "PASSWORD": "123",
+  "GMAIL": "nguyendangtruong22042002@gmail.com",
+  "ROLE": "user"
+}]
