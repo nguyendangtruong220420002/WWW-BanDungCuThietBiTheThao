@@ -1,0 +1,53 @@
+package Controller;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+import Connect.MongoDBUtil;
+import Dao.Pay_DAO;
+
+/**
+ * Servlet implementation class DSDonHangServlet
+ */
+public class DSDonHangServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	 private Pay_DAO pay_DAO;
+
+	    public void init() {
+	        MongoDBUtil.connect();
+	        pay_DAO = new Pay_DAO();
+	    }
+
+	    public void destroy() {
+	        MongoDBUtil.disconnect();
+	    }
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public DSDonHangServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

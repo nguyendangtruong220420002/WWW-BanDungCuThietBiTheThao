@@ -1,0 +1,74 @@
+package Controller;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.List;
+
+import Connect.MongoDBUtil;
+import Dao.SanPham_DAO;
+import Dao.User_Dao;
+import Modal.User;
+
+/**
+ * Servlet implementation class DanhSachUserServlet
+ */
+public class DanhSachUserServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private User_Dao user_Dao;
+	public void init() {
+        MongoDBUtil.connect();
+        user_Dao = new User_Dao();
+    }
+
+    public void destroy() {
+        MongoDBUtil.disconnect();
+    }
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public DanhSachUserServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		List<User> users = user_Dao.getAllUsersWithRole("user");
+        request.setAttribute("users", users);
+        request.getRequestDispatcher("QuanLy/DanhSachUser.jsp").forward(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String action = request.getParameter("action");
+
+	    if ("update".equals(action)) {
+	        // Lấy mã người dùng và thông tin người dùng từ yêu cầu
+	        String maUser = request.getParameter("maUser");
+	        User user = user_Dao.getUserById(maUser); // Lấy thông tin người dùng theo mã người dùng
+	        
+	        // Đặt đối tượng người dùng vào thuộc tính yêu cầu và chuyển hướng đến trang chỉnh sửa
+	        request.setAttribute("user", user);
+	        request.getRequestDispatcher("QuanLy/EditUser.jsp").forward(request, response);
+	        
+	    } else if ("delete".equals(action)) {
+	        // Xử lý xóa người dùng
+	        String maUser = request.getParameter("maUser");
+	        user_Dao.deleteUser(maUser);
+	        response.sendRedirect("danhSachUser");
+	    }
+        
+    }
+	
+
+}

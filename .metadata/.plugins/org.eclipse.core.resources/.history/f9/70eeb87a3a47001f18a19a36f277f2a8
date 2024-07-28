@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Xác thực đăng ký</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Xác thực đăng ký</h2>
+        <form action="VerifyServlet" method="post">
+            <div class="form-group">
+                <label for="verificationCode">Mã xác thực</label>
+                <input type="text" class="form-control" id="verificationCode" name="verificationCode" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Xác thực</button>
+        </form>
+        <% if (request.getParameter("error") != null) { %>
+            <div class="alert alert-danger mt-3">
+                Mã xác thực không chính xác. Vui lòng thử lại.
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

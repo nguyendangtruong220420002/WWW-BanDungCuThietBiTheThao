@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\WWW\20062481_NguyenDangTruong_DeTai26\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+263666766.index
+2656607053.index
+3436107382.index
+2282811507.index
+3529180626.index
+3190132331.index
+2049703262.index
